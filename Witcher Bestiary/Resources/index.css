@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "mainTitleFont";
+    src: url("../Resources/Fonts/Thewitcher.ttf") format('truetype');
+}
+
+body {
+    background-color: black;
+    text-align: center;
+    background-image: url(./Local\ Images/parchment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(180, 28, 28);
+    font-family: 'mainTitleFont';
+    text-align: center;
+    font-size: 6em; /* maybe size in 'rem'? Titles will be consistent size across the board. Set HTML font-size and mess around */
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    padding: 60px;
+    margin-top: 50px;
+    min-width: 900px;
+}
+ .page-title {
+     padding-bottom: 10px;
+ }
+
+h2, h3 {
+    font-family: 'mainTitleFont';
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    font-size: 1em; 
+    margin-bottom: 0px; /* Header being close to image - images need to be cropped! */
+}
+
+td h3 {
+    padding-top: 20px;
+}
+
+.nav {   
+    padding-bottom: 25px;
+}
+
+
+p {
+    color: black;
+    text-align: center;
+    font-family: "mainTitleFont";
+    font-size: 30px;
+    margin: auto;
+    min-width: 900px;
+}
+
+.p-two {
+    margin-bottom: 70px;
+}
+
+.introduction {
+    display: inline;
+}
+
+
+.flip-horizontally {
+    transform: scaleX(-1);
+  }
+
+.logo-image {
+    width: 8%;
+    height: 8%;
+}
+
+tr { /*set a height and width for the table/do the setting where images do NOT go out off their parent elements dimensions - check notebook (Scaling Images and Vids section) */
+    font-size: 50px;
+    text-align: center; /* want images to go underneath as the screen shortens. Check CA media queries and sizing elements again*/
+}
+
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.creature {
+    width: 400px;
+    height: 400px;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
